@@ -7,7 +7,7 @@
 *
 * Return: nothing
 */
-void i(stack_t **head, __attribute__((unused)) unsigned int line_counter)
+void i_rotl(stack_t **head, __attribute__((unused)) unsigned int line_counter)
 {
 stack_t *curr = *head, *aux;
 
