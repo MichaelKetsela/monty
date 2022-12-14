@@ -4,10 +4,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
+#include <sys/stat.h>
 #include <unistd.h>
 #include <fcntl.h>
 #include <string.h>
 #include <ctype.h>
+#include <error.h>
+#include <limits.h>
 
 /**
 * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -70,8 +73,8 @@ void instruction_pint(stack_t **head, unsigned int line_counter);
 void instruction_pop(stack_t **head, unsigned int line_counter);
 void instruction_pstr(stack_t **head, unsigned int line_counter);
 void instruction_queue(stack_t **head, unsigned int line_counter);
-void instruction_rotl(stack_t **head, unsigned int line_counter);
-void instruction_rotr(stack_t **head,  unsigned int line_count);
+void instruction_rotl(stack_t **head, __attribute__((unused)) unsigned int line_counter);
+void instruction_rotr(stack_t **head,  __attribute__((unused)) unsigned int line_count);
 void instruction_stack(stack_t **head, unsigned int line_counter);
 void instruction_mul(stack_t **head, unsigned int line_counter);
 void instruction_nop(stack_t **head, unsigned int line_counter);

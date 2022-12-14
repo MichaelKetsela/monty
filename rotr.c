@@ -7,9 +7,8 @@
 *
 * Return: nothing
 */
-void instruction_rotr(stack_t **head,  unsigned int line_count)
+void instruction_rotr(stack_t **head,  __attribute__((unused)) unsigned int line_count)
 {
-(void)line_count;
 	stack_t *dup;
 
 	dup = *head;

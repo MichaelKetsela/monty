@@ -7,9 +7,8 @@
 *
 * Return: nothing
 */
-void instruction_rotl(stack_t **head, unsigned int line_counter)
+void instruction_rotl(stack_t **head, __attribute__((unused)) unsigned int line_counter)
 {
-(void)line_counter;
 stack_t *curr = *head, *aux;
 
 	if (*head == NULL || (*head)->next == NULL)
