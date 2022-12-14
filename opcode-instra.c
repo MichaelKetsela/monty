@@ -21,8 +21,8 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 				{"mod", instruction_mod},
 				{"pchar", instruction_pchar},
 				{"pstr", instruction_pstr},
-				{"rotl", instruction_rotl},
-				{"rotr", instruction_rotr},
+				{"rotl", i_rotl},
+				{"rotr", i_rotr},
 				{"queue", instruction_queue},
 				{"stack", instruction_stack},
 				{NULL, NULL}
